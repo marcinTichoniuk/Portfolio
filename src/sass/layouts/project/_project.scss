@@ -72,14 +72,17 @@
       @include media-q(medium) {
         display: flex;
         justify-content: space-around;
-        align-items: center;
+        align-items: flex-end;
         margin-right: 0;
         top: 40px;
         right: auto;
         left: 100%;
-        height: 80px;
+        height: 60px;
         transform-origin: 0 0;
         transform: rotate(90deg);
+      }
+      @include media-q(small){
+        align-items: center;
       }
     }
   }
