@@ -2,6 +2,10 @@
   margin-left: 16%;
   padding-top: 25vh;
   width: 23%;
+  @include media-q(small){
+    margin-left: -40px;
+  }
+
   &__name {
     font-size: 1.6rem;
     font-weight: 400;
