@@ -1,0 +1,12 @@
+.footer {
+  &__text {
+    margin-left: 16%;
+    padding-bottom: 40px;
+  }
+  &__credits {
+    font-size: 1.5rem;
+    @include media-q(small){
+      font-size: 1rem;
+    }
+  }
+}

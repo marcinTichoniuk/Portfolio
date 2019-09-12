@@ -1,0 +1,19 @@
+.title {
+  margin-left: 16%;
+  padding-top: 25vh;
+  width: 23%;
+  &__name {
+    font-size: 1.6rem;
+    font-weight: 400;
+    animation: moveRtoL 0.4s 0.4s ease-out both;
+    @include media-q(small){
+      font-size: 1.4rem;
+    }
+  }
+  &:nth-of-type(3){
+    @include media-q(medium){
+      padding-top: 5vh;
+    }
+  }
+}
+

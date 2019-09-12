@@ -1,0 +1,156 @@
+.work {
+  margin-top: 150px;
+
+  &__card {
+    width: 45%;
+    margin-left: 44%;
+    &::before {
+      content: '';
+      display: block;
+      margin-bottom: 5px;
+      font-size: 1.6rem;
+      font-weight: 400;
+      @include media-q(small) {
+        font-size: 1.3rem;
+      }
+    }
+    @include media-q(medium) {
+      width: 69%;
+      margin-left: 20%;
+    }
+
+    &-commerce {
+      &::before {
+        content: 'e-commerce';
+      }
+    }
+
+    &-hotel{ 
+      width: calc(39% + 60px);
+      margin-left: -60px;
+      margin-top: 40px;
+      &::before {
+        content: 'hotel';
+      }
+      @include media-q(medium){
+        width: 75%;
+        margin-left: -40px;
+        margin-top: 80px;
+      }
+    }
+
+    &-dog{
+      width: calc(39% + 30px);
+      margin-left: -30px;
+      margin-top: 50px;
+      &::after {
+        content: 'dog-breeding website';
+        display: block;
+        margin-top: 5px;
+        font-size: 1.6rem;
+        font-weight: 400;
+        text-align: right;
+        @include media-q(small) {
+          font-size: 1.3rem;
+        }
+      }
+      @include media-q(medium){
+        width: calc(73% - 10px);
+        margin-left: calc(16% + 5px);
+        margin-top: 85px;
+      }
+    }
+
+    &-social{
+      width: 40%;
+      margin-left: 49%;
+      margin-top: -150px;
+      &::before {
+        content: 'social-media app';
+      }
+      @include media-q(medium){
+        width: 70%;
+        margin-left: 40px;
+        margin-top: 90px;
+      }
+    }
+
+    &-gif{
+      width: calc(16% + 60px);
+      margin-left: -60px;
+      margin-top: 100px;
+      &::after {
+        content: 'random gif';
+        display: block;
+        margin-top: 5px;
+        font-size: 1.6rem;
+        font-weight: 400;
+        @include media-q(small) {
+          font-size: 1.3rem;
+        }
+      }
+      @include media-q(medium){
+        width: 70%;
+        margin-left: -40px;
+        margin-top: 100px;
+      }
+    }
+
+    &-game{
+      width: 50%;
+      margin-left: 39%;
+      margin-top: -50px;
+      &::before {
+        content: 'simple game';
+      }
+      @include media-q(medium){
+        width: 73%;
+        margin-left: 16%;
+        margin-top: 90px;
+      }
+    }
+  }
+
+  &__container {
+    background-color: $color-green-darken;
+    transition: all 1.5s ease-out;
+    cursor: pointer;
+    overflow: hidden;
+    &:hover .work__link {
+      transform: scale(0.8);
+    }
+    &:hover .work__image {
+      transform: scale(1.5);
+    }
+  }
+
+  &__link, &__image {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  &__link{
+    overflow: hidden;
+  }
+
+  &__text {
+    padding-top: 100px;
+    margin-left: 39%;
+    font-size: 1.6rem;
+    @include media-q(small){
+      margin-left: 16%;
+      font-size: 1.3rem;
+    }
+  }
+
+  &__link-out {
+    color: $color-green-darken;
+    font-weight: 700;
+    font-size: 1.8rem;
+    @include media-q(small){
+      font-size: 1.5rem;
+    }
+  }
+
+}

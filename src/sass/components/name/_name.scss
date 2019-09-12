@@ -1,0 +1,12 @@
+.name {
+  @include position($top: 60px, $left: 0, $right: 80px);
+  font-size: 3.4rem;
+  letter-spacing: 1px;
+  z-index: -1;
+  color: $color-green-darken;
+  @include media-q(medium) {
+    top: 40px;
+    right: 60px;
+    font-size: 2.5rem;
+  }
+}

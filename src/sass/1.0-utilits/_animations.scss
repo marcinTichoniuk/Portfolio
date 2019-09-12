@@ -1,0 +1,131 @@
+@keyframes split {
+  0% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: 0;
+  }
+  55% {
+    margin-left: 15%;
+  }
+  65% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+
+
+@keyframes moveToLeft {
+  from{
+    transform: translateX(100%) translateY(-50%);
+  }
+  to {
+    transform: translateX(-100%)translateY(-50%);
+  }
+}
+
+
+
+@keyframes moveBall {
+  0% {
+    left: 0;
+    opacity: 0;
+  }
+  10% {
+    left: 95%;
+    opacity: 1;
+  }
+  20% {
+    left: -10%
+  }
+  30% {
+    left: 95%;
+  }
+  40% {
+    left: 15%;
+  }
+  50% {
+    left: 95%;
+  }
+  60% {
+    left: 40%;
+  }
+  70% {
+    left: 95%;
+  }
+  80% {
+    left: 65%;
+    opacity: 1;
+  }
+  90% {
+    left: 95%;
+    opacity: 0;
+  }
+  100% {
+    left: 95%;
+  }
+}
+
+
+@keyframes roadRunner {
+  0% {
+      transform: translateY(-50%) translateX(100%);
+  }
+  3% {
+      transform: translateY(-50%) translateX(100%) skewX(15deg);
+  }
+  6% {
+      transform: translateY(-50%) translateX(39%) skewX(19deg);
+  }
+  9% {
+    transform: translateY(-50%) translateX(46%) skewX(0deg);
+  }
+  27% {
+      transform: translateY(-50%) translateX(46%);
+  }
+  30% {
+      transform: translateY(-50%) translateX(54%) skewX(-15deg);
+  }
+  33% {
+    transform: translateY(-50%) translateX(-100%);
+  }
+  100% {
+      transform: translateY(-50%) translateX(-100%);
+  }
+}
+
+@keyframes moveRtoL {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes moveUp {
+  from {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

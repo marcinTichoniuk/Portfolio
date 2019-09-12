@@ -1,0 +1,48 @@
+html {
+  line-height: 1.2;
+  overflow-x: hidden;
+  font-size: $font-size;
+  scrollbar-width: thin;
+}
+
+body {
+  height: 100%;
+  font-family: $font-default;
+  font-weight: 500;
+  background-color: $color-green;
+  color: $color-white;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  &-thumb {
+    background: $color-green-darken;
+    &:hover {
+      background: $color-white;
+    }
+  }
+  &-track {
+    background: transparent;
+  }
+}
+
+::selection {
+  background-color: $color-green-darken;
+  color: $color-white;
+}
+
+#root {
+  position: relative;
+  height: 100%;
+  padding: 60px 60px 0;
+  @include media-q(medium){
+    padding: 40px 40px 0;
+  }
+}
+
+.content-wrap {
+  height: 100%;
+}

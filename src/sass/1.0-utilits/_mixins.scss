@@ -1,0 +1,24 @@
+$breakpoints: (
+  small: (max-width: 480px),
+  medium: (max-width: 767px),
+  large: (max-width: 1024px),
+);
+
+@mixin media-q($breakpoint){
+  $size: map-get($breakpoints, $breakpoint);
+  @if($size) {
+    @media #{$size} {
+      @content;
+    }
+  } @else {
+    @error '"#{$breakpoint}" - Nie rozpoznaję tej wartości';
+  }
+}
+
+@mixin position($position: absolute, $top: null, $left: null, $right: null, $bottom: null){
+  position: $position;
+  top: $top;
+  left: $left;
+  bottom: $bottom;
+  right: $right;
+}

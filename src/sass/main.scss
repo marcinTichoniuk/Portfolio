@@ -1,0 +1,15 @@
+@import './1.0-utilits/variables';
+@import './0.0-base/reset';
+@import './1.0-utilits/mixins';
+@import './0.0-base/base';
+@import './1.0-utilits/animations';
+@import './components/raster/raster';
+@import './components/navbar/navbar';
+@import './components/name/name';
+@import './components/title/title';
+@import './components/description/description';
+@import './components/columns/columns';
+@import './components/work/work';
+@import './components/contact/contact';
+@import './components/footer/footer';
+@import './layouts/project/project'; 

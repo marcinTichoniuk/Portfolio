@@ -1,0 +1,54 @@
+.main-nav {
+  @include position($position: fixed, $top: 60px, $left: 100%);
+  height: 80px;
+  transform-origin: 0 0;
+  transform: rotate(90deg);
+  z-index: 1000;
+  animation: fadeIn 1s ease-in both;
+  @include media-q(medium){
+    top: 40px;
+    height: 60px;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    @include media-q(small){
+      align-items: center;
+    }
+  }
+
+  &__item {
+    margin-right: 6vh;
+  }
+
+  &__link {
+    font-size: 1.6rem;
+    color: $color-white;
+    position: relative; 
+    cursor: pointer;
+    @include media-q(small){
+      font-size: 1.4rem;
+    }
+    &.active {
+      color: darken($color-white, 30%);
+    }
+    &.active::before {
+      animation: moveBall 6s ease-in-out both;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      @include position($top: -50%, $left: 0);
+      width: 5px;
+      height: 5px;
+      opacity: 0;
+      background-color: $color-white;
+      border-radius: 50%;
+      transition: opacity 0.3s ease-in-out;
+    }
+  }
+}
+
