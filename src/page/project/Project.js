@@ -42,7 +42,7 @@ class Project extends Component {
               home
             </Link>
             <a href={url} className="project__link">
-              check live
+              demo
             </a>
           </div>
         </div>
