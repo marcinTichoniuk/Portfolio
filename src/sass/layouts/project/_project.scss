@@ -66,6 +66,7 @@
       margin-right: 60px;
       transform: translateY(-50%);
       height: 100px;
+      animation: fadeIn 1s ease-in both; 
       @include media-q(large) {
         margin-right: 30px;
       }
@@ -76,9 +77,8 @@
         right: auto;
         left: 100%;
         transform-origin: 0 0;
-        transform: rotate(90deg);
+        transform: rotate(90deg) translateX(-50%);
         width: 50vh;
-        margin-top: -25vh;
       }
     }
   }
@@ -95,6 +95,9 @@
     }
     @include media-q(medium){
       margin: 30px 0;
+    }
+    @include media-q(small){
+      font-size: 1.4rem;
     }
   }
 
