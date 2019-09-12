@@ -57,8 +57,7 @@
   }
 
   &__button {
-    flex-basis: 11%;
-    position: relative;
+    align-self: start;
     z-index: 1000;
 
     &-container {
@@ -73,12 +72,13 @@
       @include media-q(medium) {
         display: flex;
         justify-content: space-around;
+        align-items: flex-start;
         margin-right: 0;
+        top: 40px;
         right: auto;
         left: 100%;
         transform-origin: 0 0;
-        transform: rotate(90deg) translateX(-200px);
-        width: 50vh;
+        transform: rotate(90deg);
       }
     }
   }
@@ -94,7 +94,7 @@
       color: gold;
     }
     @include media-q(medium){
-      margin: 30px 0;
+      margin: 15px 30px;
     }
     @include media-q(small){
       font-size: 1.4rem;
