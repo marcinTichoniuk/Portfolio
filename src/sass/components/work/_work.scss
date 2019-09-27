@@ -109,6 +109,20 @@
         margin-top: 90px;
       }
     }
+
+    &-spa-form {
+      width: 45%;
+      margin-left: 16%;
+      margin-top: 150px;
+      &::before {
+        content: 'spa form api'; 
+      }
+      @include media-q(medium) {
+        width: 67%;
+        margin-left: 22%;
+        margin-top: 90px;
+      }
+    }
   }
 
   &__container {

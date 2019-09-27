@@ -5,6 +5,7 @@ import img3 from './images/dog-breeding/valey-home.jpg';
 import img4 from './images/social-media/social-home.jpg';
 import img5 from './images/gif/gif-home.png';
 import img6 from './images/paper-rock-scissors/game-home.png';
+import img7 from './images/spa-form&api/spa-form-home.jpg';
 
 // commerce
 import commerce1 from './images/e-commerce/commerce-menu.jpg';
@@ -38,6 +39,12 @@ import gif2 from './images/gif/gif-gif.png';
 // game
 import game1 from './images/paper-rock-scissors/game-home.png';
 import game2 from './images/paper-rock-scissors/game-game.png';
+
+// spa form api
+import spa1 from './images/spa-form&api/spa-form-home.jpg';
+import spa2 from './images/spa-form&api/spa-form-api.png';
+import spa3 from './images/spa-form&api/original/spa-form.png';
+import spa4 from './images/spa-form&api/spa-form-api2.png';
 
 
 export const projects = [
@@ -155,6 +162,29 @@ export const projects = [
     description: 'Simple, well-known game. Choose option, click button and start playing. You can also follow statistics. Created in vanilla JavaScript using OOP.',
     tools: 'HTML, CSS and JavaScript OOP',
     className: 'work__card work__card-game'
+  },
+
+  {
+    id: 7,
+    name: 'spa form api',
+    slug: 'spa-form-api',
+    url: 'https://website-form-api-742c5.web.app/',
+    img: img7,
+    images: [spa1, spa2, spa3, spa4],
+    description: 'SPA with form and API. You can change articles by clicking left or right arrow. Form has live validation, so you can see incorrect message if you type something wrong. If you submit the form a message will appear showing the result (form send correctly or fill the form). You can also check/uncheck last checkbox to toggle other checkboxes. Website is fully responsive.',
+    tools: 'React, typicode API, SASS and BEM, RWD',
+    className: 'work__card work__card-spa-form',
+    parallax: [
+      {
+        start: 'self',
+        duration: 100 + '%',
+        properties: [
+          {
+            startValue: 0,
+            endValue: -600,
+            property: 'translateY'
+          }]
+      }]
   },
 
 ];
