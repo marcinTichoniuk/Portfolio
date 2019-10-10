@@ -171,8 +171,8 @@ export const projects = [
     url: 'https://website-form-api-742c5.web.app/',
     img: img7,
     images: [spa1, spa2, spa3, spa4],
-    description: 'SPA with form and API. You can change articles by clicking left or right arrow. Form has live validation, so you can see incorrect message if you type something wrong. If you submit the form a message will appear showing the result (form send correctly or fill the form). You can also check/uncheck last checkbox to toggle other checkboxes. Website is fully responsive.',
-    tools: 'React, typicode API, SASS and BEM, RWD',
+    description: 'SPA with form and API. You can change articles by clicking left or right arrow. Form has live validation, so you can see incorrect message if you type something wrong. If you submit the form a message will appear showing the result (form send correctly or something went wrong). Form was created using Formik with Yup. Website is fully responsive.',
+    tools: 'React, Formik, Yup, typicode API, SASS and BEM, RWD',
     className: 'work__card work__card-spa-form',
     parallax: [
       {
