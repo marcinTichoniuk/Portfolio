@@ -43,7 +43,7 @@ import game2 from './images/paper-rock-scissors/game-game.png';
 // spa form api
 import spa1 from './images/spa-form&api/spa-form-home.jpg';
 import spa2 from './images/spa-form&api/spa-form-api.png';
-import spa3 from './images/spa-form&api/original/spa-form.png';
+import spa3 from './images/spa-form&api/spa-form.png';
 import spa4 from './images/spa-form&api/spa-form-api2.png';
 
 

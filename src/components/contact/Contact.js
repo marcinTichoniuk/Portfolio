@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaLinkedin } from 'react-icons/fa';
+import { FaLinkedin, FaGithubSquare } from 'react-icons/fa';
 
 const Contact = () => {
   return (
@@ -9,6 +9,7 @@ const Contact = () => {
       <p className="contact__text">find me</p>
       <div className="contact__icons">
         <a href="https://www.linkedin.com/in/marcin-tichoniuk-774a48190" className="contact__link contact__link-icon"><FaLinkedin className="contact__icon" /></a>
+        <a href="https://github.com/marcinTichoniuk" className="contact__link contact__link-icon"><FaGithubSquare className="contact__icon" /></a>
       </div>
     </section>
   );
